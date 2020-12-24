@@ -2,15 +2,15 @@ import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
-import Payment from "./Payment";
-import Checkout from "./Checkout";
-import Orders from "./Orders";
 import Login from "./Login";
+import Payment from "./Payment";
+import Orders from "./Orders";
+import { auth } from "./firebase";
+import Checkout from "./Checkout";
+import { useStateValue } from "./StateProvider";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { auth } from "./firebase";
-import { useStateValue } from "./StateProvider";
 
 const promise = loadStripe(
   "pk_test_51Hz156GBHNk9fvjT2fjymKvSruNGDgia1cW3Iz0VgBXwj5pbnWEBFXznT3YcKV2dlnxFejRLlYQ32JhGRPnNuxP100tpINjGEa"
@@ -20,20 +20,15 @@ function App() {
   const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
-    // will only run once when the app component loads...
-
     auth.onAuthStateChanged((authUser) => {
       console.log("THE USER IS >>> ", authUser);
 
       if (authUser) {
-        // the user just logged in / the user was logged in
-
         dispatch({
           type: "SET_USER",
           user: authUser,
         });
       } else {
-        // the user is logged out
         dispatch({
           type: "SET_USER",
           user: null,
@@ -41,14 +36,11 @@ function App() {
       }
     });
   }, []);
+
   return (
     <Router>
       <div className="app">
         <Switch>
-          <Route path="/orders">
-            <Header />
-            <Orders />
-          </Route>
           <Route path="/login">
             <Login />
           </Route>
@@ -65,6 +57,10 @@ function App() {
           <Route path="/">
             <Header />
             <Home />
+          </Route>
+          <Route path="/orders">
+            <Header />
+            <Orders />
           </Route>
         </Switch>
       </div>
