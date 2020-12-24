@@ -1,9 +1,9 @@
-.header {
+.header__one {
   position: sticky;
   display: flex;
   background-color: #131921;
   align-items: center;
-  height: 60px;
+  height: 65px;
   top: 0;
   z-index: 100;
 }
@@ -12,14 +12,17 @@
   display: flex;
   flex: 1;
   align-items: center;
-  border-radius: 24px;
+  border-radius: 30px;
 }
 
 .header__searchInput {
-  height: 12px;
+  height: 18px;
   padding: 10px;
   border: none;
   width: 100%;
+  margin-left: 33px;
+  outline: 0;
+  line-height: 1px;
 }
 
 .header__logo {
@@ -31,8 +34,46 @@
 
 .header__searchIcon {
   padding: 5px;
-  height: 22px !important;
+  height: 28px !important;
   background-color: #cd9042;
+}
+
+.arrow {
+  padding: 5px;
+  height: 28px !important;
+  background-color: rgb(226, 219, 205);
+}
+
+.searchField__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchText {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  height: 28px !important;
+  background-color: rgb(226, 219, 205);
+  font-size: 12px;
+  width: 10px;
+  font-weight: 600;
+}
+.flag {
+  max-width: 25px;
+  margin: 10px;
+  height: 20px;
+}
+
+.flagArrow {
+  color: white;
+  margin-right: 4px;
+  padding-right: 10px;
+}
+
+.headerFlag {
+  margin-left: 2px;
 }
 
 .header__nav {
@@ -66,4 +107,84 @@
 .header__basketCount {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.header__two {
+  display: flex;
+  color: #0f1111;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #232f3e;
+  position: sticky;
+  float: none;
+  height: 39px;
+  padding-top: 0;
+  padding-left: 1px;
+}
+
+.nav__left {
+  align-items: center;
+}
+
+.headerTwo__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-right: 350px;
+}
+
+.header_text {
+  font-size: 14px;
+  font-family: inherit;
+  float: left;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.nav_right {
+  display: flex;
+  margin-right: 17px;
+  color: white;
+  font-weight: 600;
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 13px;
+  font-weight: 550;
+}
+
+.addText {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.header__add {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: white;
+  margin-left: 10px;
+}
+
+.addText__two {
+  font-weight: 700;
+  font-size: 13px;
 }
