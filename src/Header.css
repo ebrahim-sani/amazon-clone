@@ -122,10 +122,6 @@
   padding-left: 1px;
 }
 
-.nav__left {
-  align-items: center;
-}
-
 .headerTwo__container {
   display: flex;
   align-items: center;
@@ -187,4 +183,12 @@
 .addText__two {
   font-weight: 700;
   font-size: 13px;
+}
+
+.icon__lebel {
+  cursor: pointer;
+}
+
+.menuIcon {
+  cursor: pointer;
 }

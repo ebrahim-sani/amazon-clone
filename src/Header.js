@@ -88,7 +88,7 @@ function Header() {
 
       <div className="header__two">
         <div className="nav__left">
-          <MenuIcon />
+          <MenuIcon className="menuIcon" />
           <span className="icon__lebel">All</span>
         </div>
         <div></div>
