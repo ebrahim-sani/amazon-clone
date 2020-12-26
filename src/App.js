@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
+import Footer from "./Footer";
+import CompAndAcc from "./CompAndAcc";
 import Login from "./Login";
 import Payment from "./Payment";
 import Orders from "./Orders";
@@ -41,6 +43,11 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/computer&accessories">
+            <Header />
+            <CompAndAcc />
+            <Footer />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>
@@ -57,6 +64,7 @@ function App() {
           <Route path="/">
             <Header />
             <Home />
+            <Footer />
           </Route>
           <Route path="/orders">
             <Header />

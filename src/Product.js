@@ -31,7 +31,11 @@ function Product({ id, title, image, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>🌟</p>
+              <img
+                className="rating__star"
+                src="https://img.icons8.com/fluent/48/000000/star.png"
+                alt=""
+              />
             ))}
         </div>
       </div>

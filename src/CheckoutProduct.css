@@ -7,6 +7,10 @@
   padding-left: 20px;
 }
 
+.rating__star {
+  max-width: 16px;
+}
+
 .checkoutProduct__info > button {
   background: #f0c14b;
   border: 1px solid;

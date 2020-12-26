@@ -1,7 +1,6 @@
 import React from "react";
+import { Link, useHistory } from "react-router-dom";
 import "./Home.css";
-import Product from "./Product";
-import Footer from "./Footer";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
 function Home() {
@@ -169,7 +168,10 @@ function Home() {
                 />
               </div>
               <div className="link">
-                <span className="comp__link">Shop now</span>
+                <Link to="/computer&accessories">
+                  {" "}
+                  <span className="comp__link">Shop now</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -306,7 +308,6 @@ function Home() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </div>
   );

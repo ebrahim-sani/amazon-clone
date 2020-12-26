@@ -24,8 +24,19 @@
   margin-bottom: 15px;
 }
 
+.product__info > p {
+  font-size: 14px;
+  margin-top: 16px;
+  padding-top: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
 .product__price {
-  margin-top: 5px;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .product > button {
@@ -38,4 +49,9 @@
 
 .product__rating {
   display: flex;
+  max-width: 4px;
+}
+
+.rating__star {
+  max-width: 16px;
 }
