@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import Footer from "./Footer";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
 function Home() {
@@ -81,7 +82,6 @@ function Home() {
               </div>
             </div>
           </div>
-
           <div className="component">
             <div className="homeUI3">
               <div className="UI__heading">
@@ -101,7 +101,6 @@ function Home() {
               </div>
             </div>
           </div>
-
           <div className="component">
             <div className="homeUI2">
               <div className="UI__heading">
@@ -225,6 +224,89 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="home__row">
+          <div className="component_row">
+            <div className="row__header">
+              <span className="headTitle">Amazon Top Sellers</span>
+              <span className="headTitle2">Shop now</span>
+            </div>
+            <div className="row_content">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/71NTi82uBEL._AC_SL1500_.jpg"
+                alt=""
+                className="row_img"
+              />
+
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/716pgZxRYhL._AC_SL1395_.jpg"
+                alt=""
+                className="row_img"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/61z5oOk5fzL._AC_SL1350_.jpg"
+                alt=""
+                className="row_img"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/71nDX36Y9UL._AC_SL1026_.jpg"
+                alt=""
+                className="row_img"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/91KQmjDxj-L._SL1500_.jpg"
+                alt=""
+                className="row_img"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/61ViijOSR8L._AC_SL1500_.jpg"
+                alt=""
+                className="row_img"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="home__row">
+          <div className="component_row">
+            <div className="row__header">
+              <span className="headTitle">Amazon Top Sellers</span>
+              <span className="headTitle2">Shop now</span>
+            </div>
+            <div className="row_content">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/71NTi82uBEL._AC_SL1500_.jpg"
+                alt=""
+                className="row_img"
+              />
+
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/716pgZxRYhL._AC_SL1395_.jpg"
+                alt=""
+                className="row_img"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/61z5oOk5fzL._AC_SL1350_.jpg"
+                alt=""
+                className="row_img"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/71nDX36Y9UL._AC_SL1026_.jpg"
+                alt=""
+                className="row_img"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/91KQmjDxj-L._SL1500_.jpg"
+                alt=""
+                className="row_img"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/61ViijOSR8L._AC_SL1500_.jpg"
+                alt=""
+                className="row_img"
+              />
+            </div>
+          </div>
+        </div>
+        <Footer />
       </div>
     </div>
   );
