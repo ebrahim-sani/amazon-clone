@@ -69,6 +69,24 @@ function Footer() {
           </button>
         </div>
       </div>
+      <div className="footer__component3">
+        <div className="footerLinks">
+          <a href="/" className="f_link">
+            Conditions of Use
+          </a>
+          <a href="/" className="f_link">
+            Privacy Notice
+          </a>
+          <a href="/" className="f_link">
+            Interest-Base Ads
+          </a>
+        </div>
+        <div className="footerLinks2">
+          <span className="f__link">
+            © 1996-2020, Amazon FAKE-CLONE, lnc. or its affiliates
+          </span>
+        </div>
+      </div>
     </div>
   );
 }

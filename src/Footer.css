@@ -22,12 +22,12 @@
 .heading {
   font-size: 16px;
   font-weight: 700;
-  color: white;
+  color: #ddd;
 }
 
 .links {
   font-size: 14px;
-  color: white;
+  color: #ddd;
 }
 
 .footer__component2 {
@@ -35,6 +35,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid rgb(107, 106, 106);
 }
 
 .footerLogo {
@@ -47,7 +48,7 @@
 .footer__button {
   display: flex;
   align-items: center;
-  color: white;
+  color: #ddd;
   height: 25px;
   margin: 3px;
   border: 1px solid #848688;
@@ -69,8 +70,37 @@
   width: 100%;
   height: 30px;
   background-color: transparent;
-  color: white;
+  color: #ddd;
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+.footer__component3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerLinks2 {
+  margin-left: 14px;
+}
+
+.f_link {
+  font-size: 13px;
+  padding: 7px;
+  color: #ddd;
+  outline: none;
+  border: none;
+}
+
+.f__link {
+  font-size: 12px;
 }
